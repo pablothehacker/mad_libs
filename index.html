@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Mad libs</title>
+		</head>
+
+		<body>
+			<h1>The wise words of Obi-Wan Kenobi</h1>
+			<link rel="stylesheet" type="text/css" href="madlibs_syle.css">
+
+				<!--The words that fill in the blanks: -->
+				<div class="form-style-3">
+			<form id="form"> 
+
+			<fieldset>
+				
+				<label for="adjective">Adjective:</label>
+				<input type="text" id="adjective">	
+
+				<label for="pluralNoun">plural noun:</label>
+				<input type="text" id="pluralNoun">
+
+				<label for="noun">noun:</label>
+				<input type="text" id="noun">
+
+				<label for="adjective2">Adjective:</label>
+				<input type="text" id="adjective2">
+
+				<label for="partOfBody">part of body:</label>
+				<input type="text" id="partOfBody">
+
+				<label for="adjective3">Adjective:</label>
+				<input type="text" id="adjective3">
+
+				<label for="pluralNoun2">plural noun:</label>
+				<input type="text" id="pluralNoun2">
+
+				<label for="partOfBody2">part of body:</label>
+				<input type="text" id="partOfBody2">
+
+				<label for="adjective4">Adjective:</label>
+				<input type="text" id="adjective4">
+
+				<label for="adverbe">Adjective:</label>
+				<input type="text" id="adverbe">
+
+				<label for="noun3">adjective that caracterises (like fat):</label>
+				<input type="text" id="noun3">
+
+				<button type="button" onclick="createStory()">May the force be with you!</button>
+				
+
+			</fieldset>
+			</form>
+			</div>
+
+
+			<div id="output"></div>
+			<div id="past_stories"></div>	
+
+
+			<script>
+				
+				var d1 = document.getElementById('past_stories');
+
+				for (var i = 0; i < localStorage.length; i++) {
+					var pastStory = localStorage.getItem(localStorage.key(i));
+					d1.insertAdjacentHTML(`beforeend`, `<p> ${pastStory	} </p>`);			
+				}
+
+				function createStory() {
+					const adjective = document.getElementById('adjective');
+					const pluralNoun = document.getElementById('pluralNoun');
+					const noun = document.getElementById('noun');
+					const adjective2 = document.getElementById('adjective2');
+					const partOfBody = document.getElementById('partOfBody');
+					const adjective3 = document.getElementById('adjective3');
+					const pluralNoun2 = document.getElementById('pluralNoun2');
+					const partOfBody2 = document.getElementById('partOfBody2');
+					const adjective4 = document.getElementById('adjective4');
+					const adverbe = document.getElementById('adverbe');
+					const noun3 = document.getElementById('noun3');
+
+					const output = document.getElementById('output');
+					const form = document.querySelector('form');		
+					
+					
+
+
+
+
+					const story = `The force is a mystical ${adjective.value} power. As Jedi Master Obi-Wan Kenobi once said, "the Force is an energy field, created by all living ${pluralNoun.value}, and binds the ${noun.value} together." Using the power of the Force, a Jedi can  do many ${adjective2.value} things, like using the Force to exercice ${partOfBody.value} control over ${adjective3.value} minded ${pluralNoun2.value}. A Jedi can also use the Force to move objects with his ${partOfBody2.value}. It doesn't matter how ${adjective4.value} these objects are; it only matters how ${adverbe.value} the Jedi belives in the Force. Most importantly, the Force teaches a Jedi to really on his feelings. As Obi-Wan Kenobi told his student: Luke your ${noun3.value}`
+					
+					output.innerHTML = story;
+					output.insertAdjacentHTML('beforeend',`<a href="index.html" class="button"> try again</a>` );
+					form.style.display = 'none';
+					console.log(window.localStorage);
+					localStorage.setItem(Date.now(), story)
+
+
+				};
+
+			</script>
+
+		</body>
+	</html>
+
+

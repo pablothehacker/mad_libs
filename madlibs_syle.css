@@ -1,0 +1,88 @@
+
+
+body{ background-image: url(https://studybreaks.com/wp-content/uploads/2018/03/Star-Wars-feature-image.jpg);}
+
+
+.form-style-3{
+    max-width: 450px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: 90px auto;
+
+}
+
+.form-style-3 label{
+    display:block;
+    margin-bottom: 10px;
+
+    width: 100px;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    text-shadow: 1px 1px 1px blue
+}
+
+.form-style-3 fieldset{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin: 10px 10px 50px 10px;
+    border: 1px solid none;
+    padding: 20px;
+    background: #2E9AFE;
+    box-shadow: inset 0px 0px 15px none;
+    -moz-box-shadow: inset 0px 0px 15px none;
+    -webkit-box-shadow: inset 0px 0px 15px none	;
+    }
+
+    .form-style-3 textarea{
+    width:250px;
+    height:100px;
+}
+
+.form-style-3 input[type=text],
+.form-style-3 select, 
+.form-style-3 textarea{
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 2px solid none;
+    outline: none;
+    color: #0404B4;
+    padding: 5px 8px 5px 8px;
+    box-shadow: inset 1px 1px 4px none;
+    -moz-box-shadow: inset 1px 1px 4px none	;
+    -webkit-box-shadow: inset 1px 1px 4px #5882FA;
+    background: #A9D0F5;
+    width:50%;
+}
+
+.button,
+.form-style-3 button[type=button]{
+    background: #ff9900;
+    border: 2px solid blue;
+    padding: 5px 15px 5px 15px;
+    color: black;
+    -webkit-box-shadow: -1px -1px 18px 4px #001133;
+    border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    font-weight: bold;
+    margin-top: 10px
+}
+
+
+#past_stories{
+    background-color:#e6ffff; 
+    margin-left: 300px;
+    margin-right: 300px;
+
+
+
+
+}
+
+
+
+
+
