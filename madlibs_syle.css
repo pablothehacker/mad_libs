@@ -1,5 +1,5 @@
 
-
+    
 body{ background-image: url(https://studybreaks.com/wp-content/uploads/2018/03/Star-Wars-feature-image.jpg);}
 
 
@@ -28,7 +28,7 @@ body{ background-image: url(https://studybreaks.com/wp-content/uploads/2018/03/S
     margin: 10px 10px 50px 10px;
     border: 1px solid none;
     padding: 20px;
-    background: #2E9AFE;
+    background: rgb(46,154,254,0.5);
     box-shadow: inset 0px 0px 15px none;
     -moz-box-shadow: inset 0px 0px 15px none;
     -webkit-box-shadow: inset 0px 0px 15px none	;
@@ -59,7 +59,7 @@ body{ background-image: url(https://studybreaks.com/wp-content/uploads/2018/03/S
 .button,
 .form-style-3 button[type=button]{
     background: #ff9900;
-    border: 2px solid blue;
+    border: 2px solid blue ;
     padding: 5px 15px 5px 15px;
     color: black;
     -webkit-box-shadow: -1px -1px 18px 4px #001133;
@@ -68,20 +68,29 @@ body{ background-image: url(https://studybreaks.com/wp-content/uploads/2018/03/S
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     font-weight: bold;
-    margin-top: 10px
+    margin-top: 10px;
+    
 }
 
-
+#output,
 #past_stories{
-    background-color:#e6ffff; 
+    background-color:rgb(230,255,255,0.5); 
     margin-left: 300px;
     margin-right: 300px;
 
 
-
-
 }
 
+
+#title {
+    color: blue;
+    }
+
+
+#start_again{
+    margin-top: 4px;
+    margin-left: 200px;
+    }
 
 
 
